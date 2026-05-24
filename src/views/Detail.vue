@@ -56,9 +56,9 @@ const updateStatus = (newStatus: PaymentOrderStatusType) => {
 </script>
 <template>
   <section>
-    <h1 class="h2 sm:h1 color-primary">Ver detalle</h1>
-    <PaymentOrderCard v-if="order" :order="order" />
-    <section v-if="order?.status !=='PAGADA' && order?.status !=='RECHAZADA'">
+    <h1 class="h2 sm:h1 color-primary slide-in-left ">Ver detalle</h1>
+    <PaymentOrderCard v-if="order" :order="order" class="slide-in-right"/>
+    <section v-if="order?.status !=='PAGADA' && order?.status !=='RECHAZADA'" class="slide-in-bottom "">
       <h4 class="color-primary">Cambiar estado</h4>
       <article>
         <button
