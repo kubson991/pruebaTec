@@ -1,0 +1,124 @@
+@use "sass:map";
+@use "sass:meta";
+
+// ========================
+// LIGHT THEME
+// ========================
+
+$light-colors: (
+  green: (
+    1000: #005f5a,
+    900: #00c7a7,
+    800: #c5e9e9,
+    700: #dcf5f7,
+  ),
+
+  pink: (
+    1000: #e92553,
+    900: #ff6f96,
+    800: #ffdfea,
+    700: #fff1f5,
+  ),
+
+  blue: (
+    1000: #001e3e,
+    900: #032a5a,
+    800: #2289f1,
+    700: #c9e1ff,
+    600: #eef7fb,
+    500: #1e4e88,
+  ),
+
+  grey: (
+    1000: #1a1a1a,
+    900: #d4d5d5,
+    800: #e0e0e0,
+    700: #f5f6f8,
+  ),
+
+  red: (
+    900: #ff624e,
+    50: #ffe6e3,
+  ),
+
+  orange: (
+    900: #ff9800,
+    50: #fff4e5,
+  ),
+
+  base: (
+    white: #ffffff,
+    background: #f7f8f9,
+    text: #1a1a1a,
+  ),
+);
+
+// ========================
+// DARK THEME
+// ========================
+
+$dark-colors: (
+  green: (
+    1000: #00e0c2,
+    900: #00c7a7,
+    800: #134542,
+    700: #0f2e2c,
+  ),
+
+  pink: (
+    1000: #ff7aa6,
+    900: #ff5f8c,
+    800: #4a1d2a,
+    700: #30131d,
+  ),
+
+  blue: (
+    1000: #d6e8ff,
+    900: #8fc2ff,
+    800: #2289f1,
+    700: #163b63,
+    600: #0f1722,
+    500: #4e8ed6,
+  ),
+
+  grey: (
+    1000: #ffffff,
+    900: #c2c2c2,
+    800: #2c2c2c,
+    700: #1c1c1c,
+  ),
+
+  red: (
+    900: #ff8a7a,
+    50: #3a1d1a,
+  ),
+
+  orange: (
+    900: #ffb547,
+    50: #3a2a12,
+  ),
+
+  base: (
+    white: #181818,
+    background: #121212,
+    text: #f5f5f5,
+  ),
+);
+
+// ========================
+// GENERATE CSS VARIABLES
+// ========================
+
+@mixin generate-color-vars($colors) {
+  @each $group-name, $group-values in $colors {
+    @if meta.type-of($group-values) == "map" {
+      @each $shade, $value in $group-values {
+        --#{"" + $group-name}-#{"" + $shade}: #{$value};
+      }
+    }
+  }
+}
+
+.color-primary{
+  color:var(--blue-900)
+}

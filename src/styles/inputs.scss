@@ -1,0 +1,232 @@
+@use "./colors.scss";
+@use "./typography.scss" as *;
+
+$extraSpaceForLabelFloating:0.5rem;
+input {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color:var(--blue-900)
+}
+.inputContainer{
+  display: block;
+  min-width: fit-content;
+  margin-bottom: 4px;
+  span:not(.material-symbols-rounded):not(.material-symbols-outlined):not(span.customIcon) {
+    display: block;
+    @include text-variant(body-sm-regular);
+    font-weight: 400;
+    color: var(--blue-900);
+    pointer-events: none;
+    min-width: 100%;
+    margin-top: 4px;
+    padding-left: 15px;
+  }
+}
+
+.ginko-input,.ginko-textarea {
+  margin-top: $extraSpaceForLabelFloating;
+  outline: none;
+    padding: 0 14px;
+    &:not(.ginko-input){
+      padding: 14px;
+    }
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 4px;
+    background-color: var(--blue-600);
+    border: solid 1px var(--blue-900);
+    border-radius: var(--radius);
+    color: var(--blue-900);
+    flex-direction: row;
+    @include text-variant(button-sm-extrabold);
+    height: 44px;
+    min-height: 44px;
+    max-height: 44px;
+    border-radius: var(--radius);
+    //label and placeholder behavior
+    textarea{
+      resize: none;
+      height: 100%;
+      width: 100%;
+      outline: none;
+    }
+    ::placeholder {
+      transition: opacity;
+      opacity: 0;
+      color: var(--blue-900);
+      transition: opacity 0.1s;
+      transition-timing-function:ease-in-out;
+    }
+    &:has(input:focus),&:has(textarea:focus), &:hover{
+      border-color: var(--blue-800);
+      input::placeholder {
+        opacity: 1;
+      }
+      label{
+        transform: translateY(-110%);
+        transition: all 0.1s ease;
+        left: 15px;
+        @include text-variant(body-sm-regular);
+
+      }
+    }
+
+    &:has(input[placeholder]:not(:placeholder-shown)), &:has(textarea[placeholder]:not(:placeholder-shown)) {
+      input::placeholder {
+        opacity: 1;
+      }
+      label{
+        transform: translateY(-110%);
+        transition: all 0.1s ease;
+        left: 15px;
+        @include text-variant(body-sm-regular);
+      }
+    }
+      //states
+
+    &.success:not(:has(input:disabled)):not(:has(input:focus)):not(:hover){
+      border-color: var(--green-900);
+      label,span.material-symbols-rounded,span.material-symbols-outlined,span.customIcon{
+        color: var(--green-900);
+      }
+    }
+    &.error:not(:has(input:disabled)):not(:has(input:focus):not(:hover)){
+      border-color: var(--red-900);
+      label,span.material-symbols-rounded,span.material-symbols-outlined,span.customIcon{
+        color: var(--red-900);
+      }
+    }
+    &:has(input:disabled),&:has(textarea:disabled){
+      color:var(--grey-900);
+      border-color: var(--grey-900);
+      background-color: var(--white);
+       label,span.material-symbols-rounded,span.material-symbols-outlined,span.customIcon{
+        color: var(--grey-900);
+        &::before{
+          background-color: var(--white);
+        }
+      }
+      input,input::placeholder , textarea,textarea::placeholder {
+        cursor: not-allowed;
+        color: var(--grey-900);
+      }
+    }
+
+
+  label{
+    cursor: help;
+    position: absolute;
+    bottom: 10px;
+    top: unset;
+    left: 15px;
+    z-index: 1;
+    &:has(+ span) {
+      left: 45px;
+    }
+    &::before{
+      display: block;
+      content: "";
+      z-index: -1;
+      position: absolute;
+      left: -5px;
+      bottom: 19%;
+      width: calc(100% + 12px);
+      height: 35%;
+      background-color: var(--blue-600);
+      border-radius: var(--radius);
+    }
+  }
+  input{
+    height: 100%;
+    flex: 1;
+    outline: none;
+  }
+
+  &:has(textarea) label{
+    bottom: unset;
+    top: 10px;
+  }
+
+  //HELPER text
+
+
+
+  span.material-symbols-rounded,span.material-symbols-outlined,span.customIcon{
+    align-self: center;
+  }
+  }
+
+
+
+
+//todos estos comentarios son echos por mi no por IA no se me asuste inge :P 
+//Con esta estructura se crea el input ,siendo success un estado y error otro(opcionales) ,
+//todos los span son opcionales , en principio solo se aceptan iconos con sus debidas clases de iconos o customIcon si se desea poner lo que sea (con etiqueta span siempre)
+//si se desea un helper se debe envolver en una etiqueta inputContainer y colocar un span con el texto bajo le input
+
+// <div class="inputContainer">
+// <div class="ginko-input success">
+// <label for="">label</label>
+// <span class="material-symbols-outlined">info</span>
+// <input type="text" placeholder="placeholder"   value="">
+// <span class="material-symbols-outlined">check_circle</span
+// >
+// </div>
+// <span>Ej: Optional helper text</span>
+// </div>
+
+
+.ginko-selector{
+  outline: none;
+  height: 44px;
+  min-height: 44px;
+  max-height: 44px;
+  background-color: var(--blue-600);
+  border: solid 1px var(--blue-900);
+  border-radius: var(--radius);
+  color: var(--blue-900);
+  padding: 10px;
+  margin-top: $extraSpaceForLabelFloating;
+  @include text-variant( body-md-regular);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-1 0 19 19'><path fill='%23032A5A' d='M8.5 15.313a1.026 1.026 0 0 1-.728-.302l-6.8-6.8a1.03 1.03 0 0 1 1.455-1.456L8.5 12.828l6.073-6.073a1.03 1.03 0 0 1 1.455 1.456l-6.8 6.8a1.026 1.026 0 0 1-.728.302z'/></svg>");
+  background-repeat: no-repeat;
+  appearance: none;
+  background-position: right 15px center;
+  background-size: 12px;
+  &.success:not(:hover){
+    border-color: var(--green-900);
+    color: var(--green-900);
+  }
+  &.error:not(:hover){
+    border-color: var(--red-900);
+    color: var(--red-900);
+    &:hover{
+      border-color: var(--blue-800);
+    }
+  }
+  &:disabled{
+    color:var(--grey-900);
+    border-color: var(--grey-900);
+    background-color: var(--white);
+    cursor: not-allowed;
+    &::placeholder {
+      color: var(--grey-900);
+    }
+  }
+
+
+
+}
+.inputHelperText{
+  display: block;
+  @include text-variant(body-sm-regular);
+  font-weight: 400;
+  color: var(--blue-900);
+  pointer-events: none;
+  min-width: 100%;
+  margin-top: 4px;
+  padding-left: 15px;
+}

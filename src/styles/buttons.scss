@@ -1,0 +1,105 @@
+@use "./colors.scss";
+@use "./typography.scss" as typography;
+@use "./responsive.scss" as responsive;
+
+
+button{
+  cursor: pointer;
+  outline: none;
+}
+
+.ginko-button, .ginko-button--line{
+display: flow-root;
+background-color: var(--blue-900);
+border-radius: 5px;
+overflow: hidden;
+text-align: center;
+  span,&{
+    color: var(--base-white);
+  }
+padding: 0.7rem 1rem 0.65rem 1rem;
+min-height: 40px;
+max-height: 44px;
+
+&> span:first-child {
+  float: left;
+  transform: translateY(-1px) translateX(-10%);
+}
+&> span:last-child {
+  float: right;
+  transform: translateY(-1px) translateX(10%);
+}
+@include typography.text-variant(button-lg-bold);
+@Include responsive.max(sm){
+  @include typography.text-variant(button-sm-bold);
+}
+cursor: pointer;
+&.extraBold{
+  @include typography.text-variant(button-lg-extrabold);
+  @Include responsive.max(sm){
+    @include typography.text-variant(button-lg-bold);
+  }
+}
+&:disabled{
+  background-color: var(--grey-900);
+  span,&{
+    color:  var();
+
+  }
+  cursor: not-allowed;
+}
+@include responsive.min(sm){
+
+  &:hover{
+    span,&{
+      color: var(--base-white);
+
+
+    }
+    background-color: var(--blue-500);
+    opacity: 0.9;
+  }
+}
+
+&:active,&.active{
+  background-color: var(--blue-800);
+  span,&{
+    color:  var(--base-white);
+
+  }
+
+}
+}
+
+.ginko-button--line{
+  background-color: var(--base-white);
+  color: var(--blue-900);
+  border: solid 1px var(--blue-900);
+  span{
+    color: var(--blue-900);
+  }
+}
+
+.status {
+  padding: 0.6rem 1.2rem;
+  border-radius: 10rem;
+  &--BORRADOR {
+    background: var(--grey-900);
+    color: var(--grey-700);
+  }
+
+  &--APROBADA {
+    background: var(--green-700);
+    color: var(--green-1000);
+  }
+
+  &--RECHAZADA {
+    background: var(--pink-700);
+    color: var(--red-900);
+  }
+
+  &--PAGADA {
+    background: var(--blue-700);
+    color: var(--blue-1000);
+  }
+}

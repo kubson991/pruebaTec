@@ -1,0 +1,30 @@
+@use "./inputs.scss";
+@use "./buttons.scss";
+@use "./colors.scss" as *;
+@use "./typography.scss" as *;
+
+
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100dvh;
+}
+:root {
+    @include generate-color-vars($light-colors);
+    --radius:5px;
+    --cardShadow: 0px 4px 8px  var(--grey-700);
+    --cardShadowHover: 0px 4px 8px var(--grey-900);
+ 
+  }
+  //modo oscuro sobrescribiendo las variables
+  .darkMode {
+    @include generate-color-vars($dark-colors);
+  }
