@@ -10,7 +10,9 @@ Usa Ctrl + h para volver al home si estas en otra vista :)
 
 La implementación de plinia se baso en 2 propositos ,manejo de estados globales (como loaders) y patron de consumo de API mediante stores con las ventajas que estoy conlleva (por ejemplo data guardada en cache temporal)
 
-Tambien en la raíz hay una carpeta con los pantallazos de la aplicacion web en varios tamaños y con modo oscuro
+Tambien en la raíz hay una carpeta con los pantallazos de la aplicacion web en varios tamaños y con modo oscuro.
+
+Es importante aclarar que para que correcto funcionamiento de la app debe estar corriendose la API mock (json server) en el puerto 3001 y que el proyecto este corriendo en modo desarrollo , a lo largo de la documentación se explican los comandos para cada caso.
 
 ---
 
