@@ -32,7 +32,7 @@ const setActiveTable = () => {
 
 const fetchWithFilters = () => {
   paymentStore.refreshPaymentOrders({
-    supplierName: providerName.value,
+    supplierName:  providerName.value.trim(),
     status: state.value,
   });
 };
@@ -61,8 +61,8 @@ watch(state, () => {
         <label>Proveedor</label>
 
         <span class="material-symbols-rounded"> home_work </span>
+        <input type="text" placeholder="Escribe el proveedor" v-model="providerName"  :disabled="paymentStore.loading"/>
 
-        <input type="text" placeholder="Escribe el proveedor" v-model="providerName" />
       </div>
     </div>
 
@@ -93,6 +93,7 @@ watch(state, () => {
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 1.6rem;
 
   .inputContainer {

@@ -3,10 +3,11 @@ import type { CreatePaymentOrderPayload, PaymentOrder } from '@/types/payment-or
 const API_URL = 'http://localhost:3001'
 const ARTIFICIAL_DELAY_MS = 900
 const ARTIFICIAL_DELAY_POST_MS = 500
+const ARTIFICIAL_DELAY_ID_MS = 400
 export interface GetPaymentOrdersParams {
   status?: string
   supplierName?: string
-
+  id?:string
   page?: number
   limit?: number
 }
@@ -35,6 +36,9 @@ export const getPaymentOrders = async (
 
   if (filters?.status) {
     params.append('status', filters.status)
+  }
+  if (filters?.id) {
+    params.append('id', filters.id)
   }
 
   if (filters?.supplierName) {
@@ -89,6 +93,36 @@ return responseJSON
   
 }
 
+export const getPaymentOrderById = async (
+  id: number | string
+): Promise<PaymentOrder> => {
+  const response = await fetch(
+    `${API_URL}/paymentOrders/${id}`
+  )
+
+  if (!response.ok) {
+    throw new Error('Error fetching payment order')
+  }
+
+  const responseJSON: PaymentOrder =
+  await response.json()
+  await new Promise((resolve) => {
+
+    setTimeout(() => {
+  
+      console.log(
+        'Artificial delay of',
+        ARTIFICIAL_DELAY_MS,
+        'ms'
+      )
+  
+      resolve(true)
+  
+    }, ARTIFICIAL_DELAY_ID_MS)
+  
+  })
+  return responseJSON
+}
 export const createPaymentOrder = async (
   payload: CreatePaymentOrderPayload
 ) => {
@@ -118,5 +152,38 @@ export const createPaymentOrder = async (
   
   })
   
+  return response.json()
+}
+
+
+export const updatePaymentOrderStatus = async (
+  id: number | string,
+  newStatus: string
+): Promise<void> => {
+  const response = await fetch(
+    `${API_URL}/paymentOrders/${id}`,
+    {
+      method: 'PATCH',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ status: newStatus }),
+    }
+  )
+  await new Promise((resolve) => {
+
+    setTimeout(() => {
+  
+      console.log(
+        'Artificial delay of',
+        ARTIFICIAL_DELAY_MS,
+        'ms'
+      )
+  
+      resolve(true)
+  
+    }, ARTIFICIAL_DELAY_ID_MS)
+  
+  })
   return response.json()
 }

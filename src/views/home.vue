@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { onMounted, onUnmounted } from "vue";
-import Filters from "@/components/filters.vue";
+import Filters from "@/components/Filters.vue";
 import InfoCardList from "@/components/mobile/InfoCardList.vue";
 import Table from "@/components/desktop/Table.vue";
 import type { PaymentOrder } from "@/types/payment-order.types";
@@ -14,6 +14,7 @@ const appStore = useAppStore();
 const SCROLL_OFFSET = 300;
 const MOBILE_QUERY = "(max-width: 768px)";
 let mediaQuery: MediaQueryList;
+
 
 const handleScreenChange = (e: MediaQueryListEvent | MediaQueryList) => {
     if (e.matches) {
@@ -63,7 +64,13 @@ const handleScroll = async (): Promise<void> => {
 };
 
 onMounted(async () => {
+  if (paymentStore.paymentOrders.length === 0) {
+    paymentStore.refreshPaymentOrders();
+    
+  }else if(paymentStore.paymentOrders.length<2){
   await paymentStore.fetchPaymentOrders();
+
+  }
 
   const scrollContainer = getScrollContainer();
 
@@ -87,10 +94,10 @@ onUnmounted(() => {
 
 <template>
   <section class="home">
-    <Filters />
-    <Table :columns="tableColumns" :items="paymentStore.paymentOrders"  v-if="appStore.tableMode"/>
-    <InfoCardList :orders="paymentStore.paymentOrders" v-else/>
-    <div v-show="!paymentStore.hasNext" class="home__end color-primary">
+    <Filters class="slide-in-top" />
+    <Table :columns="tableColumns" :items="paymentStore.paymentOrders"  v-if="appStore.tableMode" class="slide-in-right"/>
+    <InfoCardList :orders="paymentStore.paymentOrders" class="slide-in-left" v-else/>
+    <div v-show="!paymentStore.hasNext" class="home__end color-primary slide-in-top">
       No hay más órdenes
     </div>
   </section>

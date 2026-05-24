@@ -1,5 +1,8 @@
 <script setup lang="ts">
 import type { PaymentOrder } from '@/types/payment-order.types'
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
 
 interface Props {
   order: PaymentOrder
@@ -13,10 +16,15 @@ const formatCurrency = (value: number) => {
     currency: 'COP',
   })
 }
+
+const goToDetails = (order:PaymentOrder) => {
+  router.push(`/details/${order.id}`);
+}
+
 </script>
 
 <template>
-  <article class="payment-order-card">
+  <article class="payment-order-card" @click="goToDetails(order)">
     <div class="payment-order-card__header">
       <h6 class="color-primary">
         {{ order.supplierName }}
@@ -57,6 +65,7 @@ const formatCurrency = (value: number) => {
 <style scoped lang="scss">
 @use '../../styles/typography.scss' as *;
 .payment-order-card {
+  cursor: pointer;
     background-color: var(--base-white);
   display: flex;
   flex-direction: column;

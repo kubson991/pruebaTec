@@ -81,10 +81,10 @@ const data = {
 }
 
 fs.writeFileSync(
-  './mock/db.json',
+  'API/mock/db.json',
   JSON.stringify(data, null, 2)
 )
 
 console.log(
-  'db.json generado con 120 órdenes'
+  'db.json generado con 175 órdenes'
 )

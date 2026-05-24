@@ -1,4 +1,9 @@
 <script setup lang="ts">
+import type { PaymentOrder } from '@/types/payment-order.types';
+import { useRouter } from 'vue-router';
+
+const router = useRouter();
+
 type Column<T> = {
   key: string;
   label: string;
@@ -11,6 +16,16 @@ interface Props<T> {
 }
 
 defineProps<Props<any>>();
+
+  const goToDetails = (order:PaymentOrder) => {
+    if (!order.id) {
+      alert("El ID de la orden no está disponible.");
+      return;
+      
+    }
+  router.push(`/details/${order.id}`);
+}
+
 </script>
 
 <template>
@@ -25,7 +40,7 @@ defineProps<Props<any>>();
       </thead>
 
       <tbody>
-        <tr v-for="(item, index) in items" :key="index">
+        <tr v-for="(item, index) in items" :key="index" @click="goToDetails(item)">
           <td v-for="col in columns" :key="col.key">
             <span v-if="col.render" v-html="col.render(item)" />
 

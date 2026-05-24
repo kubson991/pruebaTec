@@ -4,6 +4,8 @@ import DefaultLayout from '@/layouts/Default.vue'
 
 import HomeView from '@/views/home.vue'
 
+import Detail from '@/views/Detail.vue'
+
 import Create from '@/views/Create.vue'
 
 const router = createRouter({
@@ -27,9 +29,9 @@ const router = createRouter({
           component: Create,
         },
         {
-          path: ':id',
-          name: 'create',
-          component: Create,
+          path: 'details/:id',
+          name: 'detail',
+          component: Detail,
         },
       ],
     },

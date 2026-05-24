@@ -1,994 +1,1404 @@
 {
   "paymentOrders": [
     {
-      "id": "1",
-      "supplierName": "Logística Express",
-      "amount": 2074354,
-      "concept": "Servicios de soporte",
-      "createdAt": "2026-07-08",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "2",
-      "supplierName": "Telecom SAS",
-      "amount": 7281103,
-      "concept": "Infraestructura AWS",
-      "createdAt": "2026-05-08",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "3",
-      "supplierName": "Software Colombia",
-      "amount": 6344724,
-      "concept": "Infraestructura AWS",
-      "createdAt": "2026-10-28",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "4",
-      "supplierName": "Constructora Atlas",
-      "amount": 7422608,
-      "concept": "Consultoría financiera",
-      "createdAt": "2026-01-07",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "5",
-      "supplierName": "Servicios Cloud SAS",
-      "amount": 2482685,
-      "concept": "Mantenimiento preventivo",
-      "createdAt": "2026-09-03",
-      "status": "PAGADA"
-    },
-    {
-      "id": "6",
-      "supplierName": "Finanzas Group",
-      "amount": 1398832,
-      "concept": "Mantenimiento preventivo",
-      "createdAt": "2026-10-23",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "7",
-      "supplierName": "Software Colombia",
-      "amount": 3731629,
-      "concept": "Mantenimiento preventivo",
-      "createdAt": "2026-04-29",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "8",
-      "supplierName": "Distribuciones Omega",
-      "amount": 1847111,
-      "concept": "Asesoría tecnológica",
-      "createdAt": "2026-05-23",
-      "status": "APROBADA"
-    },
-    {
-      "id": "9",
-      "supplierName": "Marketing Pro",
-      "amount": 2252443,
-      "concept": "Asesoría tecnológica",
-      "createdAt": "2026-12-22",
-      "status": "PAGADA"
-    },
-    {
-      "id": "10",
-      "supplierName": "Data Solutions",
-      "amount": 4708032,
-      "concept": "Compra de equipos",
-      "createdAt": "2026-04-24",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "11",
-      "supplierName": "Telecom SAS",
-      "amount": 2503399,
-      "concept": "Licencias de software",
-      "createdAt": "2026-10-28",
-      "status": "PAGADA"
-    },
-    {
-      "id": "12",
-      "supplierName": "Marketing Pro",
-      "amount": 1141403,
-      "concept": "Licencias de software",
-      "createdAt": "2026-02-08",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "13",
-      "supplierName": "Telecom SAS",
-      "amount": 2410243,
-      "concept": "Consultoría financiera",
-      "createdAt": "2026-02-16",
-      "status": "APROBADA"
-    },
-    {
-      "id": "14",
-      "supplierName": "Constructora Atlas",
-      "amount": 7587937,
-      "concept": "Servicios de soporte",
-      "createdAt": "2026-07-01",
-      "status": "APROBADA"
-    },
-    {
-      "id": "15",
-      "supplierName": "Constructora Atlas",
-      "amount": 3489476,
-      "concept": "Asesoría tecnológica",
-      "createdAt": "2026-07-17",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "16",
-      "supplierName": "Telecom SAS",
-      "amount": 1007830,
+      "id": 1,
+      "supplierName": "Tecnologia SAS",
+      "amount": 1543833,
       "concept": "Envío de productos",
-      "createdAt": "2026-10-15",
-      "status": "APROBADA"
-    },
-    {
-      "id": "17",
-      "supplierName": "Logística Express",
-      "amount": 2205033,
-      "concept": "Servicios de soporte",
-      "createdAt": "2026-02-23",
-      "status": "PAGADA"
-    },
-    {
-      "id": "18",
-      "supplierName": "Software Colombia",
-      "amount": 7467823,
-      "concept": "Capacitación empresarial",
-      "createdAt": "2026-07-10",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "19",
-      "supplierName": "Inversiones Andinas",
-      "amount": 1528697,
-      "concept": "Compra de equipos",
-      "createdAt": "2026-11-16",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "20",
-      "supplierName": "Data Solutions",
-      "amount": 1705931,
-      "concept": "Compra de equipos",
-      "createdAt": "2026-08-31",
-      "status": "APROBADA"
-    },
-    {
-      "id": "21",
-      "supplierName": "Logística Express",
-      "amount": 2010580,
-      "concept": "Consultoría financiera",
-      "createdAt": "2026-04-03",
-      "status": "PAGADA"
-    },
-    {
-      "id": "22",
-      "supplierName": "Finanzas Group",
-      "amount": 1517977,
-      "concept": "Mantenimiento preventivo",
-      "createdAt": "2026-09-03",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "23",
-      "supplierName": "Data Solutions",
-      "amount": 6568433,
-      "concept": "Consultoría financiera",
-      "createdAt": "2026-01-10",
-      "status": "APROBADA"
-    },
-    {
-      "id": "24",
-      "supplierName": "Data Solutions",
-      "amount": 3555542,
-      "concept": "Infraestructura AWS",
-      "createdAt": "2026-10-31",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "25",
-      "supplierName": "Servicios Cloud SAS",
-      "amount": 5386743,
-      "concept": "Infraestructura AWS",
-      "createdAt": "2026-10-29",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "26",
-      "supplierName": "Finanzas Group",
-      "amount": 1133838,
-      "concept": "Compra de equipos",
-      "createdAt": "2026-08-23",
-      "status": "APROBADA"
-    },
-    {
-      "id": "27",
-      "supplierName": "Inversiones Andinas",
-      "amount": 3782952,
-      "concept": "Servicios de soporte",
       "createdAt": "2026-07-11",
       "status": "APROBADA"
     },
     {
-      "id": "28",
-      "supplierName": "Servicios Cloud SAS",
-      "amount": 5388621,
-      "concept": "Consultoría financiera",
-      "createdAt": "2026-09-17",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "29",
-      "supplierName": "Finanzas Group",
-      "amount": 437453,
-      "concept": "Compra de equipos",
-      "createdAt": "2026-09-15",
-      "status": "APROBADA"
-    },
-    {
-      "id": "30",
-      "supplierName": "Finanzas Group",
-      "amount": 2210665,
-      "concept": "Asesoría tecnológica",
-      "createdAt": "2026-08-19",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "31",
-      "supplierName": "Telecom SAS",
-      "amount": 5318781,
-      "concept": "Campaña digital",
-      "createdAt": "2026-01-08",
-      "status": "PAGADA"
-    },
-    {
-      "id": "32",
-      "supplierName": "Constructora Atlas",
-      "amount": 5480268,
-      "concept": "Envío de productos",
-      "createdAt": "2026-06-20",
-      "status": "APROBADA"
-    },
-    {
-      "id": "33",
-      "supplierName": "Data Solutions",
-      "amount": 813656,
-      "concept": "Campaña digital",
-      "createdAt": "2026-04-06",
-      "status": "PAGADA"
-    },
-    {
-      "id": "34",
-      "supplierName": "Inversiones Andinas",
-      "amount": 7445341,
-      "concept": "Servicios de soporte",
-      "createdAt": "2026-11-20",
-      "status": "PAGADA"
-    },
-    {
-      "id": "35",
-      "supplierName": "Tecnologia SAS",
-      "amount": 3766307,
-      "concept": "Consultoría financiera",
-      "createdAt": "2026-11-24",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "36",
-      "supplierName": "Tecnologia SAS",
-      "amount": 7839905,
-      "concept": "Campaña digital",
-      "createdAt": "2026-06-25",
-      "status": "PAGADA"
-    },
-    {
-      "id": "37",
-      "supplierName": "Distribuciones Omega",
-      "amount": 998447,
-      "concept": "Licencias de software",
-      "createdAt": "2026-05-20",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "38",
+      "id": 2,
       "supplierName": "Consultoría IT",
-      "amount": 3426016,
-      "concept": "Servicios de soporte",
-      "createdAt": "2026-01-28",
-      "status": "PAGADA"
-    },
-    {
-      "id": "39",
-      "supplierName": "Data Solutions",
-      "amount": 3231477,
-      "concept": "Consultoría financiera",
-      "createdAt": "2026-11-10",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "40",
-      "supplierName": "Data Solutions",
-      "amount": 6699831,
-      "concept": "Envío de productos",
-      "createdAt": "2026-04-20",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "41",
-      "supplierName": "Constructora Atlas",
-      "amount": 708570,
-      "concept": "Envío de productos",
-      "createdAt": "2026-07-25",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "42",
-      "supplierName": "Servicios Cloud SAS",
-      "amount": 3076133,
-      "concept": "Compra de equipos",
-      "createdAt": "2026-05-15",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "43",
-      "supplierName": "Inversiones Andinas",
-      "amount": 7011239,
+      "amount": 6293919,
       "concept": "Asesoría tecnológica",
-      "createdAt": "2026-03-25",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "44",
-      "supplierName": "Distribuciones Omega",
-      "amount": 1705169,
-      "concept": "Envío de productos",
-      "createdAt": "2026-08-20",
+      "createdAt": "2026-12-02",
       "status": "RECHAZADA"
     },
     {
-      "id": "45",
-      "supplierName": "Telecom SAS",
-      "amount": 5231633,
-      "concept": "Compra de equipos",
-      "createdAt": "2026-10-13",
-      "status": "PAGADA"
-    },
-    {
-      "id": "46",
-      "supplierName": "Logística Express",
-      "amount": 236410,
-      "concept": "Licencias de software",
-      "createdAt": "2026-07-31",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "47",
-      "supplierName": "Tecnologia SAS",
-      "amount": 436049,
-      "concept": "Mantenimiento preventivo",
-      "createdAt": "2026-07-16",
-      "status": "PAGADA"
-    },
-    {
-      "id": "48",
-      "supplierName": "Software Colombia",
-      "amount": 3891961,
-      "concept": "Capacitación empresarial",
-      "createdAt": "2026-01-09",
-      "status": "PAGADA"
-    },
-    {
-      "id": "49",
-      "supplierName": "Finanzas Group",
-      "amount": 5294578,
-      "concept": "Infraestructura AWS",
-      "createdAt": "2026-04-24",
-      "status": "APROBADA"
-    },
-    {
-      "id": "50",
-      "supplierName": "Marketing Pro",
-      "amount": 2813713,
-      "concept": "Infraestructura AWS",
-      "createdAt": "2026-02-17",
-      "status": "APROBADA"
-    },
-    {
-      "id": "51",
-      "supplierName": "Finanzas Group",
-      "amount": 6325077,
-      "concept": "Compra de equipos",
-      "createdAt": "2026-09-15",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "52",
-      "supplierName": "Software Colombia",
-      "amount": 143338,
-      "concept": "Campaña digital",
-      "createdAt": "2026-05-30",
-      "status": "PAGADA"
-    },
-    {
-      "id": "53",
+      "id": 3,
       "supplierName": "Inversiones Andinas",
-      "amount": 1047177,
-      "concept": "Campaña digital",
-      "createdAt": "2026-11-12",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "54",
-      "supplierName": "Servicios Cloud SAS",
-      "amount": 2905873,
-      "concept": "Campaña digital",
-      "createdAt": "2026-09-20",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "55",
-      "supplierName": "Servicios Cloud SAS",
-      "amount": 7494767,
+      "amount": 5792212,
       "concept": "Infraestructura AWS",
-      "createdAt": "2026-09-25",
-      "status": "APROBADA"
-    },
-    {
-      "id": "56",
-      "supplierName": "Tecnologia SAS",
-      "amount": 320702,
-      "concept": "Licencias de software",
-      "createdAt": "2026-03-06",
+      "createdAt": "2026-12-05",
       "status": "RECHAZADA"
     },
     {
-      "id": "57",
-      "supplierName": "Marketing Pro",
-      "amount": 4610263,
-      "concept": "Mantenimiento preventivo",
-      "createdAt": "2026-01-13",
+      "id": 4,
+      "supplierName": "Constructora Atlas",
+      "amount": 6364406,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-09-12",
+      "status": "PAGADA"
+    },
+    {
+      "id": 5,
+      "supplierName": "Data Solutions",
+      "amount": 5736823,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-10-01",
+      "status": "PAGADA"
+    },
+    {
+      "id": 6,
+      "supplierName": "Tecnologia SAS",
+      "amount": 7451198,
+      "concept": "Campaña digital",
+      "createdAt": "2026-07-14",
       "status": "BORRADOR"
     },
     {
-      "id": "58",
-      "supplierName": "Telecom SAS",
-      "amount": 2828344,
-      "concept": "Envío de productos",
-      "createdAt": "2026-08-07",
+      "id": 7,
+      "supplierName": "Tecnologia SAS",
+      "amount": 3642093,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-11-05",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 8,
+      "supplierName": "Constructora Atlas",
+      "amount": 4820166,
+      "concept": "Infraestructura AWS",
+      "createdAt": "2026-06-23",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 9,
+      "supplierName": "Distribuciones Omega",
+      "amount": 5427202,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-04-14",
       "status": "APROBADA"
     },
     {
-      "id": "59",
-      "supplierName": "Data Solutions",
-      "amount": 3166989,
+      "id": 10,
+      "supplierName": "Telecom SAS",
+      "amount": 2418060,
       "concept": "Consultoría financiera",
+      "createdAt": "2026-07-15",
+      "status": "PAGADA"
+    },
+    {
+      "id": 11,
+      "supplierName": "Software Colombia",
+      "amount": 5590272,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-01-20",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 12,
+      "supplierName": "Inversiones Andinas",
+      "amount": 3096339,
+      "concept": "Compra de equipos",
       "createdAt": "2026-06-03",
       "status": "PAGADA"
     },
     {
-      "id": "60",
-      "supplierName": "Servicios Cloud SAS",
-      "amount": 4110439,
+      "id": 13,
+      "supplierName": "Tecnologia SAS",
+      "amount": 6490897,
       "concept": "Compra de equipos",
-      "createdAt": "2026-01-23",
+      "createdAt": "2026-11-09",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 14,
+      "supplierName": "Consultoría IT",
+      "amount": 6067722,
+      "concept": "Consultoría financiera",
+      "createdAt": "2026-08-18",
       "status": "APROBADA"
     },
     {
-      "id": "61",
-      "supplierName": "Distribuciones Omega",
-      "amount": 3531334,
-      "concept": "Asesoría tecnológica",
-      "createdAt": "2026-11-08",
-      "status": "PAGADA"
-    },
-    {
-      "id": "62",
-      "supplierName": "Inversiones Andinas",
-      "amount": 2918248,
+      "id": 15,
+      "supplierName": "Tecnologia SAS",
+      "amount": 4855936,
       "concept": "Envío de productos",
-      "createdAt": "2026-04-05",
+      "createdAt": "2026-01-03",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 16,
+      "supplierName": "Marketing Pro",
+      "amount": 4336423,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-08-27",
       "status": "PAGADA"
     },
     {
-      "id": "63",
+      "id": 17,
+      "supplierName": "Marketing Pro",
+      "amount": 5926719,
+      "concept": "Infraestructura AWS",
+      "createdAt": "2026-08-03",
+      "status": "PAGADA"
+    },
+    {
+      "id": 18,
+      "supplierName": "Tecnologia SAS",
+      "amount": 277172,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-11-20",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 19,
+      "supplierName": "Consultoría IT",
+      "amount": 7279743,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-03-02",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 20,
       "supplierName": "Finanzas Group",
-      "amount": 1323101,
+      "amount": 2712353,
+      "concept": "Envío de productos",
+      "createdAt": "2026-08-28",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 21,
+      "supplierName": "Logística Express",
+      "amount": 6375216,
+      "concept": "Asesoría tecnológica",
+      "createdAt": "2026-06-01",
+      "status": "APROBADA"
+    },
+    {
+      "id": 22,
+      "supplierName": "Software Colombia",
+      "amount": 5288928,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-06-20",
+      "status": "APROBADA"
+    },
+    {
+      "id": 23,
+      "supplierName": "Servicios Cloud SAS",
+      "amount": 4972332,
+      "concept": "Licencias de software",
+      "createdAt": "2026-04-13",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 24,
+      "supplierName": "Telecom SAS",
+      "amount": 5759193,
+      "concept": "Mantenimiento preventivo",
+      "createdAt": "2026-11-10",
+      "status": "PAGADA"
+    },
+    {
+      "id": 25,
+      "supplierName": "Constructora Atlas",
+      "amount": 5113973,
+      "concept": "Mantenimiento preventivo",
+      "createdAt": "2026-06-07",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 26,
+      "supplierName": "Tecnologia SAS",
+      "amount": 5029308,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-07-07",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 27,
+      "supplierName": "Marketing Pro",
+      "amount": 1050009,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-11-01",
+      "status": "APROBADA"
+    },
+    {
+      "id": 28,
+      "supplierName": "Software Colombia",
+      "amount": 2977647,
+      "concept": "Envío de productos",
+      "createdAt": "2026-03-21",
+      "status": "APROBADA"
+    },
+    {
+      "id": 29,
+      "supplierName": "Consultoría IT",
+      "amount": 3188898,
+      "concept": "Asesoría tecnológica",
+      "createdAt": "2026-04-15",
+      "status": "APROBADA"
+    },
+    {
+      "id": 30,
+      "supplierName": "Constructora Atlas",
+      "amount": 950967,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-08-17",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 31,
+      "supplierName": "Tecnologia SAS",
+      "amount": 6582524,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-02-10",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 32,
+      "supplierName": "Servicios Cloud SAS",
+      "amount": 5504638,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-08-07",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 33,
+      "supplierName": "Consultoría IT",
+      "amount": 5176578,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-04-22",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 34,
+      "supplierName": "Data Solutions",
+      "amount": 4065464,
+      "concept": "Envío de productos",
+      "createdAt": "2026-03-28",
+      "status": "APROBADA"
+    },
+    {
+      "id": 35,
+      "supplierName": "Tecnologia SAS",
+      "amount": 2219036,
+      "concept": "Envío de productos",
+      "createdAt": "2026-09-15",
+      "status": "PAGADA"
+    },
+    {
+      "id": 36,
+      "supplierName": "Distribuciones Omega",
+      "amount": 5969567,
+      "concept": "Consultoría financiera",
+      "createdAt": "2026-10-27",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 37,
+      "supplierName": "Data Solutions",
+      "amount": 6713226,
+      "concept": "Mantenimiento preventivo",
+      "createdAt": "2026-02-20",
+      "status": "APROBADA"
+    },
+    {
+      "id": 38,
+      "supplierName": "Finanzas Group",
+      "amount": 6042376,
+      "concept": "Envío de productos",
+      "createdAt": "2026-12-25",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 39,
+      "supplierName": "Logística Express",
+      "amount": 2584655,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-07-17",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 40,
+      "supplierName": "Servicios Cloud SAS",
+      "amount": 3914444,
+      "concept": "Asesoría tecnológica",
+      "createdAt": "2026-03-03",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 41,
+      "supplierName": "Telecom SAS",
+      "amount": 3726226,
+      "concept": "Envío de productos",
+      "createdAt": "2026-07-25",
+      "status": "PAGADA"
+    },
+    {
+      "id": 42,
+      "supplierName": "Consultoría IT",
+      "amount": 1432012,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-11-17",
+      "status": "PAGADA"
+    },
+    {
+      "id": 43,
+      "supplierName": "Logística Express",
+      "amount": 5959261,
+      "concept": "Mantenimiento preventivo",
+      "createdAt": "2026-09-04",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 44,
+      "supplierName": "Finanzas Group",
+      "amount": 5841325,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-01-11",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 45,
+      "supplierName": "Consultoría IT",
+      "amount": 2760039,
       "concept": "Servicios de soporte",
+      "createdAt": "2026-03-30",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 46,
+      "supplierName": "Inversiones Andinas",
+      "amount": 217347,
+      "concept": "Consultoría financiera",
+      "createdAt": "2026-05-27",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 47,
+      "supplierName": "Logística Express",
+      "amount": 7648133,
+      "concept": "Consultoría financiera",
+      "createdAt": "2026-12-16",
+      "status": "APROBADA"
+    },
+    {
+      "id": 48,
+      "supplierName": "Tecnologia SAS",
+      "amount": 1621276,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-09-23",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 49,
+      "supplierName": "Data Solutions",
+      "amount": 571421,
+      "concept": "Servicios de soporte",
+      "createdAt": "2026-11-02",
+      "status": "APROBADA"
+    },
+    {
+      "id": 50,
+      "supplierName": "Inversiones Andinas",
+      "amount": 6698572,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-11-21",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 51,
+      "supplierName": "Constructora Atlas",
+      "amount": 5004230,
+      "concept": "Campaña digital",
+      "createdAt": "2026-07-28",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 52,
+      "supplierName": "Data Solutions",
+      "amount": 3906979,
+      "concept": "Licencias de software",
+      "createdAt": "2026-05-20",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 53,
+      "supplierName": "Software Colombia",
+      "amount": 6486650,
+      "concept": "Infraestructura AWS",
+      "createdAt": "2026-07-13",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 54,
+      "supplierName": "Consultoría IT",
+      "amount": 3242286,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-09-18",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 55,
+      "supplierName": "Logística Express",
+      "amount": 6574347,
+      "concept": "Infraestructura AWS",
       "createdAt": "2026-03-02",
       "status": "PAGADA"
     },
     {
-      "id": "64",
-      "supplierName": "Marketing Pro",
-      "amount": 6439191,
-      "concept": "Campaña digital",
-      "createdAt": "2026-04-23",
+      "id": 56,
+      "supplierName": "Data Solutions",
+      "amount": 5054576,
+      "concept": "Envío de productos",
+      "createdAt": "2026-02-27",
+      "status": "APROBADA"
+    },
+    {
+      "id": 57,
+      "supplierName": "Logística Express",
+      "amount": 1174780,
+      "concept": "Envío de productos",
+      "createdAt": "2026-01-17",
       "status": "RECHAZADA"
     },
     {
-      "id": "65",
-      "supplierName": "Finanzas Group",
-      "amount": 4384932,
-      "concept": "Consultoría financiera",
-      "createdAt": "2026-11-25",
-      "status": "BORRADOR"
+      "id": 58,
+      "supplierName": "Inversiones Andinas",
+      "amount": 5435929,
+      "concept": "Licencias de software",
+      "createdAt": "2026-02-01",
+      "status": "APROBADA"
     },
     {
-      "id": "66",
+      "id": 59,
       "supplierName": "Consultoría IT",
-      "amount": 2888005,
-      "concept": "Mantenimiento preventivo",
-      "createdAt": "2026-04-30",
+      "amount": 6608984,
+      "concept": "Licencias de software",
+      "createdAt": "2026-11-28",
+      "status": "APROBADA"
+    },
+    {
+      "id": 60,
+      "supplierName": "Constructora Atlas",
+      "amount": 2485371,
+      "concept": "Asesoría tecnológica",
+      "createdAt": "2026-12-28",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 61,
+      "supplierName": "Logística Express",
+      "amount": 686686,
+      "concept": "Servicios de soporte",
+      "createdAt": "2026-02-15",
+      "status": "APROBADA"
+    },
+    {
+      "id": 62,
+      "supplierName": "Consultoría IT",
+      "amount": 5617057,
+      "concept": "Servicios de soporte",
+      "createdAt": "2026-11-07",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 63,
+      "supplierName": "Finanzas Group",
+      "amount": 4512244,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-07-17",
       "status": "PAGADA"
     },
     {
-      "id": "67",
-      "supplierName": "Data Solutions",
-      "amount": 7768809,
-      "concept": "Compra de equipos",
-      "createdAt": "2026-08-09",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "68",
-      "supplierName": "Inversiones Andinas",
-      "amount": 4305172,
-      "concept": "Compra de equipos",
-      "createdAt": "2026-10-14",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "69",
-      "supplierName": "Telecom SAS",
-      "amount": 6984749,
-      "concept": "Compra de equipos",
-      "createdAt": "2026-03-11",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "70",
-      "supplierName": "Constructora Atlas",
-      "amount": 2851969,
+      "id": 64,
+      "supplierName": "Tecnologia SAS",
+      "amount": 5630040,
       "concept": "Campaña digital",
-      "createdAt": "2026-12-21",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "71",
-      "supplierName": "Servicios Cloud SAS",
-      "amount": 5901790,
-      "concept": "Envío de productos",
       "createdAt": "2026-03-18",
       "status": "PAGADA"
     },
     {
-      "id": "72",
-      "supplierName": "Software Colombia",
-      "amount": 4311457,
-      "concept": "Mantenimiento preventivo",
-      "createdAt": "2026-01-07",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "73",
-      "supplierName": "Software Colombia",
-      "amount": 7464448,
-      "concept": "Envío de productos",
-      "createdAt": "2026-06-26",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "74",
+      "id": 65,
       "supplierName": "Consultoría IT",
-      "amount": 7437936,
-      "concept": "Capacitación empresarial",
-      "createdAt": "2026-12-24",
-      "status": "RECHAZADA"
+      "amount": 2611064,
+      "concept": "Mantenimiento preventivo",
+      "createdAt": "2026-03-03",
+      "status": "PAGADA"
     },
     {
-      "id": "75",
-      "supplierName": "Servicios Cloud SAS",
-      "amount": 5377730,
-      "concept": "Licencias de software",
-      "createdAt": "2026-05-24",
-      "status": "APROBADA"
-    },
-    {
-      "id": "76",
-      "supplierName": "Tecnologia SAS",
-      "amount": 7572654,
+      "id": 66,
+      "supplierName": "Software Colombia",
+      "amount": 1762353,
       "concept": "Servicios de soporte",
       "createdAt": "2026-07-26",
       "status": "BORRADOR"
     },
     {
-      "id": "77",
-      "supplierName": "Inversiones Andinas",
-      "amount": 6253694,
-      "concept": "Capacitación empresarial",
-      "createdAt": "2026-02-27",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "78",
-      "supplierName": "Servicios Cloud SAS",
-      "amount": 6087077,
-      "concept": "Infraestructura AWS",
-      "createdAt": "2026-12-24",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "79",
-      "supplierName": "Servicios Cloud SAS",
-      "amount": 3535742,
-      "concept": "Infraestructura AWS",
-      "createdAt": "2026-05-03",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "80",
+      "id": 67,
       "supplierName": "Tecnologia SAS",
-      "amount": 2309935,
-      "concept": "Capacitación empresarial",
-      "createdAt": "2026-07-20",
+      "amount": 1583405,
+      "concept": "Licencias de software",
+      "createdAt": "2026-09-15",
       "status": "PAGADA"
     },
     {
-      "id": "81",
-      "supplierName": "Finanzas Group",
-      "amount": 4604993,
-      "concept": "Asesoría tecnológica",
-      "createdAt": "2026-06-19",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "82",
-      "supplierName": "Consultoría IT",
-      "amount": 6849060,
-      "concept": "Infraestructura AWS",
-      "createdAt": "2026-08-09",
-      "status": "PAGADA"
-    },
-    {
-      "id": "83",
-      "supplierName": "Inversiones Andinas",
-      "amount": 5682061,
-      "concept": "Mantenimiento preventivo",
-      "createdAt": "2026-10-09",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "84",
-      "supplierName": "Tecnologia SAS",
-      "amount": 7497945,
-      "concept": "Infraestructura AWS",
-      "createdAt": "2026-09-07",
-      "status": "APROBADA"
-    },
-    {
-      "id": "85",
+      "id": 68,
       "supplierName": "Logística Express",
-      "amount": 7070915,
-      "concept": "Compra de equipos",
-      "createdAt": "2026-01-02",
-      "status": "APROBADA"
-    },
-    {
-      "id": "86",
-      "supplierName": "Software Colombia",
-      "amount": 5429231,
-      "concept": "Mantenimiento preventivo",
-      "createdAt": "2026-07-18",
+      "amount": 2625820,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-08-30",
       "status": "BORRADOR"
     },
     {
-      "id": "87",
-      "supplierName": "Data Solutions",
-      "amount": 4442943,
-      "concept": "Mantenimiento preventivo",
-      "createdAt": "2026-04-08",
-      "status": "PAGADA"
-    },
-    {
-      "id": "88",
-      "supplierName": "Tecnologia SAS",
-      "amount": 3552675,
-      "concept": "Mantenimiento preventivo",
-      "createdAt": "2026-08-14",
-      "status": "APROBADA"
-    },
-    {
-      "id": "89",
-      "supplierName": "Servicios Cloud SAS",
-      "amount": 2614638,
-      "concept": "Envío de productos",
-      "createdAt": "2026-10-17",
-      "status": "PAGADA"
-    },
-    {
-      "id": "90",
-      "supplierName": "Consultoría IT",
-      "amount": 6327995,
-      "concept": "Campaña digital",
-      "createdAt": "2026-12-12",
-      "status": "APROBADA"
-    },
-    {
-      "id": "91",
-      "supplierName": "Constructora Atlas",
-      "amount": 991639,
-      "concept": "Campaña digital",
-      "createdAt": "2026-10-23",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "92",
-      "supplierName": "Software Colombia",
-      "amount": 354924,
-      "concept": "Infraestructura AWS",
-      "createdAt": "2026-05-17",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "93",
-      "supplierName": "Tecnologia SAS",
-      "amount": 6709378,
-      "concept": "Asesoría tecnológica",
-      "createdAt": "2026-06-26",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "94",
-      "supplierName": "Consultoría IT",
-      "amount": 540435,
-      "concept": "Compra de equipos",
-      "createdAt": "2026-04-27",
-      "status": "PAGADA"
-    },
-    {
-      "id": "95",
-      "supplierName": "Inversiones Andinas",
-      "amount": 7347361,
-      "concept": "Consultoría financiera",
-      "createdAt": "2026-09-17",
-      "status": "APROBADA"
-    },
-    {
-      "id": "96",
-      "supplierName": "Logística Express",
-      "amount": 877006,
-      "concept": "Campaña digital",
-      "createdAt": "2026-05-31",
-      "status": "PAGADA"
-    },
-    {
-      "id": "97",
+      "id": 69,
       "supplierName": "Finanzas Group",
-      "amount": 6590888,
-      "concept": "Asesoría tecnológica",
-      "createdAt": "2026-01-21",
-      "status": "PAGADA"
-    },
-    {
-      "id": "98",
-      "supplierName": "Data Solutions",
-      "amount": 945176,
-      "concept": "Servicios de soporte",
-      "createdAt": "2026-07-23",
-      "status": "APROBADA"
-    },
-    {
-      "id": "99",
-      "supplierName": "Tecnologia SAS",
-      "amount": 547270,
-      "concept": "Capacitación empresarial",
-      "createdAt": "2026-09-20",
-      "status": "APROBADA"
-    },
-    {
-      "id": "100",
-      "supplierName": "Data Solutions",
-      "amount": 5979776,
-      "concept": "Asesoría tecnológica",
-      "createdAt": "2026-01-10",
-      "status": "PAGADA"
-    },
-    {
-      "id": "101",
-      "supplierName": "Tecnologia SAS",
-      "amount": 6452639,
-      "concept": "Envío de productos",
-      "createdAt": "2026-01-25",
-      "status": "PAGADA"
-    },
-    {
-      "id": "102",
-      "supplierName": "Consultoría IT",
-      "amount": 4679762,
-      "concept": "Compra de equipos",
-      "createdAt": "2026-06-04",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "103",
-      "supplierName": "Tecnologia SAS",
-      "amount": 5851709,
-      "concept": "Asesoría tecnológica",
-      "createdAt": "2026-06-12",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "104",
-      "supplierName": "Finanzas Group",
-      "amount": 3410012,
-      "concept": "Licencias de software",
-      "createdAt": "2026-09-06",
-      "status": "PAGADA"
-    },
-    {
-      "id": "105",
-      "supplierName": "Distribuciones Omega",
-      "amount": 3271146,
-      "concept": "Licencias de software",
-      "createdAt": "2026-06-18",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "106",
-      "supplierName": "Logística Express",
-      "amount": 7541946,
-      "concept": "Asesoría tecnológica",
-      "createdAt": "2026-01-04",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "107",
-      "supplierName": "Constructora Atlas",
-      "amount": 4939481,
-      "concept": "Capacitación empresarial",
-      "createdAt": "2026-04-27",
-      "status": "APROBADA"
-    },
-    {
-      "id": "108",
-      "supplierName": "Inversiones Andinas",
-      "amount": 1353274,
+      "amount": 7690247,
       "concept": "Mantenimiento preventivo",
-      "createdAt": "2026-01-10",
-      "status": "RECHAZADA"
+      "createdAt": "2026-09-16",
+      "status": "PAGADA"
     },
     {
-      "id": "109",
-      "supplierName": "Distribuciones Omega",
-      "amount": 7528191,
+      "id": 70,
+      "supplierName": "Telecom SAS",
+      "amount": 4088234,
       "concept": "Capacitación empresarial",
-      "createdAt": "2026-02-09",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "110",
-      "supplierName": "Inversiones Andinas",
-      "amount": 3725960,
-      "concept": "Mantenimiento preventivo",
-      "createdAt": "2026-09-11",
+      "createdAt": "2026-05-08",
       "status": "BORRADOR"
     },
     {
-      "id": "111",
-      "supplierName": "Inversiones Andinas",
-      "amount": 6305317,
-      "concept": "Licencias de software",
-      "createdAt": "2026-02-14",
-      "status": "RECHAZADA"
+      "id": 71,
+      "supplierName": "Servicios Cloud SAS",
+      "amount": 287187,
+      "concept": "Infraestructura AWS",
+      "createdAt": "2026-09-14",
+      "status": "PAGADA"
     },
     {
-      "id": "112",
-      "supplierName": "Data Solutions",
-      "amount": 670969,
-      "concept": "Envío de productos",
-      "createdAt": "2026-01-13",
-      "status": "RECHAZADA"
-    },
-    {
-      "id": "113",
-      "supplierName": "Inversiones Andinas",
-      "amount": 4217934,
-      "concept": "Asesoría tecnológica",
-      "createdAt": "2026-04-23",
-      "status": "BORRADOR"
-    },
-    {
-      "id": "114",
+      "id": 72,
       "supplierName": "Finanzas Group",
-      "amount": 3952969,
-      "concept": "Capacitación empresarial",
-      "createdAt": "2026-11-11",
-      "status": "PAGADA"
+      "amount": 3049333,
+      "concept": "Consultoría financiera",
+      "createdAt": "2026-10-30",
+      "status": "RECHAZADA"
     },
     {
-      "id": "115",
-      "supplierName": "Marketing Pro",
-      "amount": 5512315,
-      "concept": "Infraestructura AWS",
-      "createdAt": "2026-12-12",
-      "status": "APROBADA"
+      "id": 73,
+      "supplierName": "Telecom SAS",
+      "amount": 6289933,
+      "concept": "Consultoría financiera",
+      "createdAt": "2026-04-15",
+      "status": "RECHAZADA"
     },
     {
-      "id": "116",
+      "id": 74,
       "supplierName": "Constructora Atlas",
-      "amount": 7869535,
-      "concept": "Consultoría financiera",
-      "createdAt": "2026-05-10",
-      "status": "APROBADA"
-    },
-    {
-      "id": "117",
-      "supplierName": "Servicios Cloud SAS",
-      "amount": 2531725,
-      "concept": "Consultoría financiera",
-      "createdAt": "2026-06-20",
-      "status": "APROBADA"
-    },
-    {
-      "id": "118",
-      "supplierName": "Software Colombia",
-      "amount": 2041652,
-      "concept": "Licencias de software",
-      "createdAt": "2026-05-24",
+      "amount": 2407486,
+      "concept": "Infraestructura AWS",
+      "createdAt": "2026-11-24",
       "status": "PAGADA"
     },
     {
-      "id": "119",
+      "id": 75,
+      "supplierName": "Tecnologia SAS",
+      "amount": 6006234,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-03-20",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 76,
       "supplierName": "Servicios Cloud SAS",
-      "amount": 4895115,
-      "concept": "Infraestructura AWS",
+      "amount": 4253872,
+      "concept": "Licencias de software",
+      "createdAt": "2026-05-28",
+      "status": "APROBADA"
+    },
+    {
+      "id": 77,
+      "supplierName": "Servicios Cloud SAS",
+      "amount": 5674387,
+      "concept": "Capacitación empresarial",
       "createdAt": "2026-09-23",
       "status": "APROBADA"
     },
     {
-      "id": "120",
-      "supplierName": "Logística Express",
-      "amount": 5362261,
-      "concept": "Compra de equipos",
-      "createdAt": "2026-01-22",
+      "id": 78,
+      "supplierName": "Consultoría IT",
+      "amount": 6266194,
+      "concept": "Envío de productos",
+      "createdAt": "2026-05-04",
       "status": "APROBADA"
     },
     {
-      "id": "ms1l6iGzw6k",
-      "supplierName": "ddd",
-      "amount": 214124,
-      "concept": "xeddd",
+      "id": 79,
+      "supplierName": "Inversiones Andinas",
+      "amount": 1900697,
+      "concept": "Mantenimiento preventivo",
+      "createdAt": "2026-03-06",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 80,
+      "supplierName": "Tecnologia SAS",
+      "amount": 4518804,
+      "concept": "Campaña digital",
+      "createdAt": "2026-01-06",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 81,
+      "supplierName": "Telecom SAS",
+      "amount": 3859832,
+      "concept": "Consultoría financiera",
+      "createdAt": "2026-06-11",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 82,
+      "supplierName": "Servicios Cloud SAS",
+      "amount": 7232575,
+      "concept": "Servicios de soporte",
+      "createdAt": "2026-01-04",
       "status": "BORRADOR"
     },
     {
-      "supplierName": "jojojojo",
-      "amount": 4444,
-      "concept": "xd",
-      "status": "BORRADOR",
-      "id": "PbXz1sxBEoY"
+      "id": 83,
+      "supplierName": "Software Colombia",
+      "amount": 825991,
+      "concept": "Campaña digital",
+      "createdAt": "2026-04-11",
+      "status": "APROBADA"
     },
     {
-      "supplierName": "fafasfa",
-      "amount": 2141241,
-      "concept": "adasdad",
-      "status": "BORRADOR",
-      "id": "jO5yJnxRSoc"
+      "id": 84,
+      "supplierName": "Logística Express",
+      "amount": 4969921,
+      "concept": "Campaña digital",
+      "createdAt": "2026-01-14",
+      "status": "PAGADA"
     },
     {
-      "supplierName": "fasfasf",
-      "amount": 21412421,
-      "concept": "fafaf",
-      "status": "BORRADOR",
-      "createdAt": "2026-05-24T15:54:49.317Z",
-      "id": "y4WtP_9Rje8"
+      "id": 85,
+      "supplierName": "Distribuciones Omega",
+      "amount": 7357682,
+      "concept": "Consultoría financiera",
+      "createdAt": "2026-06-09",
+      "status": "APROBADA"
+    },
+    {
+      "id": 86,
+      "supplierName": "Logística Express",
+      "amount": 2015067,
+      "concept": "Mantenimiento preventivo",
+      "createdAt": "2026-08-10",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 87,
+      "supplierName": "Logística Express",
+      "amount": 4954249,
+      "concept": "Consultoría financiera",
+      "createdAt": "2026-09-05",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 88,
+      "supplierName": "Software Colombia",
+      "amount": 577446,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-11-14",
+      "status": "APROBADA"
+    },
+    {
+      "id": 89,
+      "supplierName": "Telecom SAS",
+      "amount": 4458721,
+      "concept": "Mantenimiento preventivo",
+      "createdAt": "2026-07-04",
+      "status": "APROBADA"
+    },
+    {
+      "id": 90,
+      "supplierName": "Software Colombia",
+      "amount": 2905175,
+      "concept": "Infraestructura AWS",
+      "createdAt": "2026-10-08",
+      "status": "PAGADA"
+    },
+    {
+      "id": 91,
+      "supplierName": "Logística Express",
+      "amount": 6029770,
+      "concept": "Campaña digital",
+      "createdAt": "2026-07-08",
+      "status": "PAGADA"
+    },
+    {
+      "id": 92,
+      "supplierName": "Logística Express",
+      "amount": 2573724,
+      "concept": "Campaña digital",
+      "createdAt": "2026-10-11",
+      "status": "APROBADA"
+    },
+    {
+      "id": 93,
+      "supplierName": "Logística Express",
+      "amount": 4766165,
+      "concept": "Campaña digital",
+      "createdAt": "2026-05-25",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 94,
+      "supplierName": "Distribuciones Omega",
+      "amount": 1078782,
+      "concept": "Envío de productos",
+      "createdAt": "2026-02-03",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 95,
+      "supplierName": "Finanzas Group",
+      "amount": 7134888,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-10-22",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 96,
+      "supplierName": "Finanzas Group",
+      "amount": 7299374,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-05-30",
+      "status": "APROBADA"
+    },
+    {
+      "id": 97,
+      "supplierName": "Finanzas Group",
+      "amount": 3565192,
+      "concept": "Licencias de software",
+      "createdAt": "2026-06-12",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 98,
+      "supplierName": "Tecnologia SAS",
+      "amount": 332923,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-09-22",
+      "status": "APROBADA"
+    },
+    {
+      "id": 99,
+      "supplierName": "Servicios Cloud SAS",
+      "amount": 2071711,
+      "concept": "Servicios de soporte",
+      "createdAt": "2026-01-01",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 100,
+      "supplierName": "Software Colombia",
+      "amount": 5412672,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-07-25",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 101,
+      "supplierName": "Telecom SAS",
+      "amount": 4323956,
+      "concept": "Licencias de software",
+      "createdAt": "2026-10-01",
+      "status": "PAGADA"
+    },
+    {
+      "id": 102,
+      "supplierName": "Servicios Cloud SAS",
+      "amount": 1818312,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-11-10",
+      "status": "PAGADA"
+    },
+    {
+      "id": 103,
+      "supplierName": "Tecnologia SAS",
+      "amount": 7601469,
+      "concept": "Mantenimiento preventivo",
+      "createdAt": "2026-01-25",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 104,
+      "supplierName": "Logística Express",
+      "amount": 1260113,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-07-28",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 105,
+      "supplierName": "Marketing Pro",
+      "amount": 2188527,
+      "concept": "Envío de productos",
+      "createdAt": "2026-02-28",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 106,
+      "supplierName": "Finanzas Group",
+      "amount": 1656124,
+      "concept": "Campaña digital",
+      "createdAt": "2026-03-19",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 107,
+      "supplierName": "Telecom SAS",
+      "amount": 7388169,
+      "concept": "Infraestructura AWS",
+      "createdAt": "2026-09-02",
+      "status": "PAGADA"
+    },
+    {
+      "id": 108,
+      "supplierName": "Servicios Cloud SAS",
+      "amount": 6416698,
+      "concept": "Servicios de soporte",
+      "createdAt": "2026-03-16",
+      "status": "APROBADA"
+    },
+    {
+      "id": 109,
+      "supplierName": "Telecom SAS",
+      "amount": 5819499,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-05-31",
+      "status": "APROBADA"
+    },
+    {
+      "id": 110,
+      "supplierName": "Marketing Pro",
+      "amount": 2103858,
+      "concept": "Infraestructura AWS",
+      "createdAt": "2026-05-17",
+      "status": "PAGADA"
+    },
+    {
+      "id": 111,
+      "supplierName": "Consultoría IT",
+      "amount": 618981,
+      "concept": "Envío de productos",
+      "createdAt": "2026-10-08",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 112,
+      "supplierName": "Telecom SAS",
+      "amount": 7440865,
+      "concept": "Servicios de soporte",
+      "createdAt": "2026-10-23",
+      "status": "PAGADA"
+    },
+    {
+      "id": 113,
+      "supplierName": "Inversiones Andinas",
+      "amount": 4072973,
+      "concept": "Asesoría tecnológica",
+      "createdAt": "2026-05-02",
+      "status": "APROBADA"
+    },
+    {
+      "id": 114,
+      "supplierName": "Constructora Atlas",
+      "amount": 5733189,
+      "concept": "Asesoría tecnológica",
+      "createdAt": "2026-11-27",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 115,
+      "supplierName": "Constructora Atlas",
+      "amount": 5789078,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-02-19",
+      "status": "APROBADA"
+    },
+    {
+      "id": 116,
+      "supplierName": "Marketing Pro",
+      "amount": 5343259,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-10-08",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 117,
+      "supplierName": "Tecnologia SAS",
+      "amount": 3920759,
+      "concept": "Infraestructura AWS",
+      "createdAt": "2026-12-07",
+      "status": "PAGADA"
+    },
+    {
+      "id": 118,
+      "supplierName": "Servicios Cloud SAS",
+      "amount": 2813349,
+      "concept": "Asesoría tecnológica",
+      "createdAt": "2026-12-02",
+      "status": "PAGADA"
+    },
+    {
+      "id": 119,
+      "supplierName": "Marketing Pro",
+      "amount": 5661286,
+      "concept": "Consultoría financiera",
+      "createdAt": "2026-06-03",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 120,
+      "supplierName": "Finanzas Group",
+      "amount": 4270674,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-09-04",
+      "status": "PAGADA"
+    },
+    {
+      "id": 121,
+      "supplierName": "Constructora Atlas",
+      "amount": 7936608,
+      "concept": "Licencias de software",
+      "createdAt": "2026-09-16",
+      "status": "PAGADA"
+    },
+    {
+      "id": 122,
+      "supplierName": "Inversiones Andinas",
+      "amount": 1790157,
+      "concept": "Servicios de soporte",
+      "createdAt": "2026-12-14",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 123,
+      "supplierName": "Telecom SAS",
+      "amount": 6684934,
+      "concept": "Campaña digital",
+      "createdAt": "2026-01-29",
+      "status": "PAGADA"
+    },
+    {
+      "id": 124,
+      "supplierName": "Constructora Atlas",
+      "amount": 5668461,
+      "concept": "Asesoría tecnológica",
+      "createdAt": "2026-11-17",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 125,
+      "supplierName": "Finanzas Group",
+      "amount": 4152290,
+      "concept": "Campaña digital",
+      "createdAt": "2026-08-19",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 126,
+      "supplierName": "Distribuciones Omega",
+      "amount": 3037663,
+      "concept": "Consultoría financiera",
+      "createdAt": "2026-10-01",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 127,
+      "supplierName": "Telecom SAS",
+      "amount": 3115208,
+      "concept": "Campaña digital",
+      "createdAt": "2026-05-30",
+      "status": "PAGADA"
+    },
+    {
+      "id": 128,
+      "supplierName": "Inversiones Andinas",
+      "amount": 3597329,
+      "concept": "Mantenimiento preventivo",
+      "createdAt": "2026-12-29",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 129,
+      "supplierName": "Software Colombia",
+      "amount": 6887251,
+      "concept": "Envío de productos",
+      "createdAt": "2026-11-15",
+      "status": "APROBADA"
+    },
+    {
+      "id": 130,
+      "supplierName": "Tecnologia SAS",
+      "amount": 2879550,
+      "concept": "Asesoría tecnológica",
+      "createdAt": "2026-04-14",
+      "status": "APROBADA"
+    },
+    {
+      "id": 131,
+      "supplierName": "Data Solutions",
+      "amount": 1684868,
+      "concept": "Envío de productos",
+      "createdAt": "2026-01-08",
+      "status": "PAGADA"
+    },
+    {
+      "id": 132,
+      "supplierName": "Constructora Atlas",
+      "amount": 6726509,
+      "concept": "Asesoría tecnológica",
+      "createdAt": "2026-07-01",
+      "status": "APROBADA"
+    },
+    {
+      "id": 133,
+      "supplierName": "Marketing Pro",
+      "amount": 772424,
+      "concept": "Licencias de software",
+      "createdAt": "2026-10-20",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 134,
+      "supplierName": "Constructora Atlas",
+      "amount": 2913837,
+      "concept": "Asesoría tecnológica",
+      "createdAt": "2026-05-06",
+      "status": "APROBADA"
+    },
+    {
+      "id": 135,
+      "supplierName": "Consultoría IT",
+      "amount": 7281634,
+      "concept": "Envío de productos",
+      "createdAt": "2026-06-20",
+      "status": "APROBADA"
+    },
+    {
+      "id": 136,
+      "supplierName": "Marketing Pro",
+      "amount": 5075386,
+      "concept": "Servicios de soporte",
+      "createdAt": "2026-08-23",
+      "status": "APROBADA"
+    },
+    {
+      "id": 137,
+      "supplierName": "Distribuciones Omega",
+      "amount": 7676508,
+      "concept": "Asesoría tecnológica",
+      "createdAt": "2026-07-31",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 138,
+      "supplierName": "Constructora Atlas",
+      "amount": 3007998,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-01-07",
+      "status": "PAGADA"
+    },
+    {
+      "id": 139,
+      "supplierName": "Finanzas Group",
+      "amount": 4861489,
+      "concept": "Envío de productos",
+      "createdAt": "2026-01-23",
+      "status": "PAGADA"
+    },
+    {
+      "id": 140,
+      "supplierName": "Consultoría IT",
+      "amount": 1151567,
+      "concept": "Mantenimiento preventivo",
+      "createdAt": "2026-09-16",
+      "status": "APROBADA"
+    },
+    {
+      "id": 141,
+      "supplierName": "Consultoría IT",
+      "amount": 1455082,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-10-29",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 142,
+      "supplierName": "Constructora Atlas",
+      "amount": 5082835,
+      "concept": "Infraestructura AWS",
+      "createdAt": "2026-11-12",
+      "status": "APROBADA"
+    },
+    {
+      "id": 143,
+      "supplierName": "Consultoría IT",
+      "amount": 3266595,
+      "concept": "Envío de productos",
+      "createdAt": "2026-06-06",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 144,
+      "supplierName": "Distribuciones Omega",
+      "amount": 4237973,
+      "concept": "Infraestructura AWS",
+      "createdAt": "2026-11-11",
+      "status": "PAGADA"
+    },
+    {
+      "id": 145,
+      "supplierName": "Data Solutions",
+      "amount": 2190747,
+      "concept": "Envío de productos",
+      "createdAt": "2026-06-10",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 146,
+      "supplierName": "Servicios Cloud SAS",
+      "amount": 5162329,
+      "concept": "Asesoría tecnológica",
+      "createdAt": "2026-03-17",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 147,
+      "supplierName": "Distribuciones Omega",
+      "amount": 2722793,
+      "concept": "Campaña digital",
+      "createdAt": "2026-11-28",
+      "status": "PAGADA"
+    },
+    {
+      "id": 148,
+      "supplierName": "Marketing Pro",
+      "amount": 7117051,
+      "concept": "Mantenimiento preventivo",
+      "createdAt": "2026-04-01",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 149,
+      "supplierName": "Servicios Cloud SAS",
+      "amount": 2819501,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-11-27",
+      "status": "PAGADA"
+    },
+    {
+      "id": 150,
+      "supplierName": "Tecnologia SAS",
+      "amount": 6512396,
+      "concept": "Servicios de soporte",
+      "createdAt": "2026-04-21",
+      "status": "APROBADA"
+    },
+    {
+      "id": 151,
+      "supplierName": "Finanzas Group",
+      "amount": 3070321,
+      "concept": "Envío de productos",
+      "createdAt": "2026-06-11",
+      "status": "APROBADA"
+    },
+    {
+      "id": 152,
+      "supplierName": "Telecom SAS",
+      "amount": 6903471,
+      "concept": "Campaña digital",
+      "createdAt": "2026-03-25",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 153,
+      "supplierName": "Finanzas Group",
+      "amount": 2461488,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-12-02",
+      "status": "PAGADA"
+    },
+    {
+      "id": 154,
+      "supplierName": "Finanzas Group",
+      "amount": 6260089,
+      "concept": "Asesoría tecnológica",
+      "createdAt": "2026-05-21",
+      "status": "APROBADA"
+    },
+    {
+      "id": 155,
+      "supplierName": "Inversiones Andinas",
+      "amount": 7548011,
+      "concept": "Servicios de soporte",
+      "createdAt": "2026-05-27",
+      "status": "APROBADA"
+    },
+    {
+      "id": 156,
+      "supplierName": "Tecnologia SAS",
+      "amount": 5006957,
+      "concept": "Mantenimiento preventivo",
+      "createdAt": "2026-04-19",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 157,
+      "supplierName": "Data Solutions",
+      "amount": 6389109,
+      "concept": "Mantenimiento preventivo",
+      "createdAt": "2026-06-22",
+      "status": "PAGADA"
+    },
+    {
+      "id": 158,
+      "supplierName": "Consultoría IT",
+      "amount": 3665652,
+      "concept": "Campaña digital",
+      "createdAt": "2026-10-21",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 159,
+      "supplierName": "Consultoría IT",
+      "amount": 3807025,
+      "concept": "Mantenimiento preventivo",
+      "createdAt": "2026-07-17",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 160,
+      "supplierName": "Telecom SAS",
+      "amount": 6432417,
+      "concept": "Servicios de soporte",
+      "createdAt": "2026-12-30",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 161,
+      "supplierName": "Data Solutions",
+      "amount": 590090,
+      "concept": "Licencias de software",
+      "createdAt": "2026-12-08",
+      "status": "APROBADA"
+    },
+    {
+      "id": 162,
+      "supplierName": "Constructora Atlas",
+      "amount": 4235760,
+      "concept": "Consultoría financiera",
+      "createdAt": "2026-06-20",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 163,
+      "supplierName": "Servicios Cloud SAS",
+      "amount": 7805860,
+      "concept": "Servicios de soporte",
+      "createdAt": "2026-09-21",
+      "status": "APROBADA"
+    },
+    {
+      "id": 164,
+      "supplierName": "Marketing Pro",
+      "amount": 4726372,
+      "concept": "Capacitación empresarial",
+      "createdAt": "2026-11-12",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 165,
+      "supplierName": "Servicios Cloud SAS",
+      "amount": 6751699,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-03-23",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 166,
+      "supplierName": "Telecom SAS",
+      "amount": 5852611,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-12-22",
+      "status": "PAGADA"
+    },
+    {
+      "id": 167,
+      "supplierName": "Servicios Cloud SAS",
+      "amount": 5669375,
+      "concept": "Envío de productos",
+      "createdAt": "2026-11-06",
+      "status": "PAGADA"
+    },
+    {
+      "id": 168,
+      "supplierName": "Finanzas Group",
+      "amount": 1642048,
+      "concept": "Compra de equipos",
+      "createdAt": "2026-02-08",
+      "status": "APROBADA"
+    },
+    {
+      "id": 169,
+      "supplierName": "Data Solutions",
+      "amount": 3493708,
+      "concept": "Envío de productos",
+      "createdAt": "2026-02-03",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 170,
+      "supplierName": "Data Solutions",
+      "amount": 4169924,
+      "concept": "Envío de productos",
+      "createdAt": "2026-01-02",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 171,
+      "supplierName": "Marketing Pro",
+      "amount": 5082248,
+      "concept": "Infraestructura AWS",
+      "createdAt": "2026-02-19",
+      "status": "BORRADOR"
+    },
+    {
+      "id": 172,
+      "supplierName": "Telecom SAS",
+      "amount": 4544519,
+      "concept": "Asesoría tecnológica",
+      "createdAt": "2026-10-09",
+      "status": "PAGADA"
+    },
+    {
+      "id": 173,
+      "supplierName": "Telecom SAS",
+      "amount": 3371462,
+      "concept": "Envío de productos",
+      "createdAt": "2026-12-15",
+      "status": "RECHAZADA"
+    },
+    {
+      "id": 174,
+      "supplierName": "Finanzas Group",
+      "amount": 1897234,
+      "concept": "Envío de productos",
+      "createdAt": "2026-03-25",
+      "status": "PAGADA"
+    },
+    {
+      "id": 175,
+      "supplierName": "Logística Express",
+      "amount": 7138293,
+      "concept": "Licencias de software",
+      "createdAt": "2026-04-18",
+      "status": "PAGADA"
     }
-  ],
-  "$schema": "./node_modules/json-server/schema.json"
+  ]
 }

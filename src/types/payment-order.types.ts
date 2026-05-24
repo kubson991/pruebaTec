@@ -10,7 +10,7 @@ export const paymentOrderStatus = {
 
 
   export interface PaymentOrder {
-    id: number
+    id: number | string
     supplierName: string
     amount: number
     concept: string

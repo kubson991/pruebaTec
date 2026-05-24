@@ -40,9 +40,9 @@ const fields = [
 ]
 
 
-const submit = () => {
+const submit = async () => {
     const date = new Date().toISOString().split('T')[0]
-    paymentOrdersStore.createPaymentOrderAction({
+    await paymentOrdersStore.createPaymentOrderAction({
         supplierName: form.supplier,
         amount: parseFloat(form.amount),
         concept: form.concept,
@@ -86,12 +86,12 @@ const getBoilerPlateForValidations = (value:string,required:boolean,max?:number)
 </script>
 <template>
   <section class="view">
-    <h1 class="h2 sm:h1">Crear orden</h1>
+    <h1 class="h2 sm:h1 slide-in-top">Crear orden</h1>
     <form @submit.prevent="submit" >
         <div
         v-for="field in fields"
         :key="field.key"
-        class="inputContainer"
+        class="inputContainer slide-in-right"
       >
         <div
           class="ginko-input"
@@ -108,6 +108,7 @@ const getBoilerPlateForValidations = (value:string,required:boolean,max?:number)
       
           <input
             :type="field.type"
+            placeholder="Escribe aquí"
             v-model="form[field.key]"
           />
         </div>
@@ -116,8 +117,8 @@ const getBoilerPlateForValidations = (value:string,required:boolean,max?:number)
           {{ validate(field.key, form[field.key]).errorMessage }}
         </span>
       </div>
-      <div class="buttonContainer">
-        <button class="ginko-button" :disabled="!canSubmit">
+      <div class="buttonContainer ">
+        <button class="ginko-button slide-in-left" :disabled="!canSubmit" >
             Crear
           </button>
       </div>
