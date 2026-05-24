@@ -1,7 +1,8 @@
-import type { PaymentOrder } from '@/types/payment-order.types'
+import type { CreatePaymentOrderPayload, PaymentOrder } from '@/types/payment-order.types'
 
 const API_URL = 'http://localhost:3001'
 const ARTIFICIAL_DELAY_MS = 900
+const ARTIFICIAL_DELAY_POST_MS = 500
 export interface GetPaymentOrdersParams {
   status?: string
   supplierName?: string
@@ -86,4 +87,36 @@ await new Promise((resolve) => {
 
 return responseJSON
   
+}
+
+export const createPaymentOrder = async (
+  payload: CreatePaymentOrderPayload
+) => {
+  const response = await fetch(
+    'http://localhost:3001/paymentOrders',
+    {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+    }
+  )
+  await new Promise((resolve) => {
+
+    setTimeout(() => {
+  
+      console.log(
+        'Artificial delay of',
+        ARTIFICIAL_DELAY_POST_MS,
+        'ms'
+      )
+  
+      resolve(true)
+  
+    }, ARTIFICIAL_DELAY_POST_MS)
+  
+  })
+  
+  return response.json()
 }

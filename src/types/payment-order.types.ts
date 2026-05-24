@@ -17,3 +17,11 @@ export const paymentOrderStatus = {
     createdAt: string
     status: PaymentOrderStatusType
   }
+
+  export interface CreatePaymentOrderPayload {
+    supplierName: string
+    amount: number
+    concept: string
+    status?: string
+    createdAt?: string
+  }

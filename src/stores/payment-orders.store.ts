@@ -7,11 +7,22 @@ import type {
   GetPaymentOrdersParams,
 } from '@/services/payment-orders.service'
 
+import { createPaymentOrder } from '@/services/payment-orders.service'
 import type {
+  CreatePaymentOrderPayload,
   PaymentOrder,
 } from '@/types/payment-order.types'
 
 const INITIAL_PAGE = 1
+
+const showAlert = (message: string) => {
+ const ok =confirm(message)
+  if(ok){
+    window.location.reload()
+}
+}
+
+
 
 export const usePaymentOrdersStore = defineStore(
   'paymentOrders',
@@ -105,6 +116,10 @@ const syncFiltersToUrl = (
         hasNext.value = response.next !== null
     
         currentPage.value = page + 1
+      }catch (error) {
+
+        console.error('Error fetching payment orders:', error)
+        showAlert('Error obteniendo los datos de las órdenes de pago. Quieres intenar de nuevo?.')
       } finally {
         loading.value = false
       }
@@ -121,6 +136,22 @@ const syncFiltersToUrl = (
       })
     }
 
+    const createPaymentOrderAction = async (
+      payload: CreatePaymentOrderPayload
+    ): Promise<void> => {
+      try {
+        loading.value = true
+        const newOrder = await createPaymentOrder(payload)
+        paymentOrders.value.unshift(newOrder)
+    
+        totalElements.value += 1
+      }catch (error) {
+        console.error('Error fetching payment orders:', error)
+        alert('Error creando la órden de pago.')
+      } finally {
+        loading.value = false
+      }
+    }
     return {
 
       // state
@@ -134,6 +165,7 @@ const syncFiltersToUrl = (
       fetchPaymentOrders,
       refreshPaymentOrders,
       resetState,
+      createPaymentOrderAction
     }
   }
 )

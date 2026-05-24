@@ -41,6 +41,11 @@ const debouncedFetch = debounce(() => {
   fetchWithFilters();
 }, 500);
 
+const navigateToCreate = () => {
+  router.push("/create");
+};
+
+
 watch(providerName, () => {
   debouncedFetch();
 });
@@ -74,6 +79,9 @@ watch(state, () => {
       <span class="material-symbols-rounded" v-else>
         grid_off
         </span>
+    </button>
+    <button class="ginko-button"  @click="navigateToCreate">
+        Crear
     </button>
   </div>
 </template>
