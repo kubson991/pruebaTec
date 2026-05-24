@@ -100,5 +100,8 @@ section {
     display: flex;
     justify-content: space-evenly;
   }
+  h4{
+    margin-top: 2rem;
+  }
 }
 </style>
